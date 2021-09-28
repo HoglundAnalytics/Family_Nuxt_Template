@@ -1,5 +1,5 @@
 <template>
-  <div id="copyright">© {{ year }}</div>
+  <div id="copyright">© {{ year }} {{ content }}</div>
 </template>
 
 <script>

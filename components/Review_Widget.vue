@@ -60,6 +60,9 @@ export default {
     width: clamp(300px, 90%, 700px);
     justify-self: center;
     flex-wrap: wrap;
+    button {
+      padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+    }
   }
 }
 .starsHolder {

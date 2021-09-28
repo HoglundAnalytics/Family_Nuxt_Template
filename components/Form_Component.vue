@@ -26,7 +26,7 @@
           },
         ]"
       >
-        <h1 class="t4">
+        <h1 class="t3">
           Call Now <NumberComponent />
           <br class="hide_large" />
           {{ noWidow(content.headline) }}

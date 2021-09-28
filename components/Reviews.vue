@@ -33,3 +33,35 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="scss">
+#testimonials {
+  padding: 3rem 0 3rem 0;
+  display: grid;
+  grid-gap: 2rem;
+}
+.review {
+  display: grid;
+  @media (max-width: 1080px) {
+    grid-template-columns: 1fr !important;
+    .top {
+      grid-column: span 1 !important;
+    }
+  }
+  .bot {
+    border-right: white 3px solid;
+    padding: 0 1rem 0 0;
+    margin: 0 2rem 0 0;
+    &:last-child {
+      border: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    @media (max-width: 1080px) {
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+  }
+}
+</style>

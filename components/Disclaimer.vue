@@ -2,7 +2,7 @@
   <div id="disclaimer">
     <h3 class="t3">Disclaimer</h3>
     <p
-      v-for="(paragraph, index) in disclaimer"
+      v-for="(paragraph, index) in content"
       :key="`disPara${index}`"
       class="tp"
     >

@@ -73,7 +73,7 @@ export default {
     font-weight: bold !important;
     text-align: center;
     @media (max-width: 1080px) {
-      font-size: 8vw;
+      font-size: 7vw;
     }
   }
   button {
