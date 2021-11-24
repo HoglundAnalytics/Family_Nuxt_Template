@@ -6,14 +6,14 @@ export const state = () => ({
   },
   // headlines to be found in headline store file
   hero: {
-    portrait: { src: 'backgrounds/background.svg', alt: '' },
-    blerb: [
-      `100% Free Confidential Phone Consultation With An Experienced Bankruptcy Attorney`,
-      `Over 47,000 clients trusted us`,
-      `No Office Visit Necessary To Get Filled`,
+    title: '',
+    button: '',
+    tag_line: '',
+    icon_dots: [
+      { src: '', alt: '' },
+      { src: '', alt: '' },
+      { src: '', alt: '' },
     ],
-    left: `We're Here To Help`,
-    whyButton: `100% Free Evaluation`,
   },
   form: {
     headline: `No Office Visit Necessary`,

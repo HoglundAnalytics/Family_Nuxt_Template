@@ -1,50 +1,37 @@
 <template>
-  <section>
-    <div class="outer_wrapper">
-      <form-controller
-        :bjn="$store.state.form.value.bjn"
-        :form-reactor="$store.state.form.value.reactor"
-        :theme="{
-          hsla: { h: 217, s: 73, l: 15, a: 1 },
-          accent: { h: 43, s: 93, l: 52, a: 1 },
-          background: { h: 217, s: 87, l: 6, a: 1 },
-          textColor: { h: 217, s: 87, l: 100, a: 1 },
-          isDark: false,
-        }"
-        :client-link="$store.state.form.value.clientLink"
-        :post-values="[
-          { id: 'URL', value: $route.fullPath },
-          { id: 'bjn', value: $store.state.number.value },
-          { id: 'camp', value: $store.state.camp.value },
-          {
-            id: 'lead-source',
-            value: $store.state.form.value.leadSource,
-          },
-          {
-            id: 'lead-vendor',
-            value: $store.state.form.value.leadVendor,
-          },
-        ]"
-      >
-        <h1 class="t3">
-          Call Now <NumberComponent />
-          <br class="hide_large" />
-          {{ noWidow(content.headline) }}
-        </h1>
-        <h2 id="formBotText" class="t2 accent_text">
-          {{ noWidow(content.subhead) }}
-        </h2>
-      </form-controller>
-    </div>
-  </section>
+  <form-controller
+    :bjn="$store.state.form.value.bjn"
+    :form-reactor="$store.state.form.value.reactor"
+    :theme="{
+      hsla: { h: 217, s: 73, l: 15, a: 1 },
+      accent: { h: 43, s: 93, l: 52, a: 1 },
+      background: { h: 217, s: 87, l: 6, a: 1 },
+      textColor: { h: 217, s: 87, l: 100, a: 1 },
+      isDark: false,
+    }"
+    :client-link="$store.state.form.value.clientLink"
+    :post-values="[
+      { id: 'URL', value: $route.fullPath },
+      { id: 'bjn', value: $store.state.number.value },
+      { id: 'camp', value: $store.state.camp.value },
+      {
+        id: 'lead-source',
+        value: $store.state.form.value.leadSource,
+      },
+      {
+        id: 'lead-vendor',
+        value: $store.state.form.value.leadVendor,
+      },
+    ]"
+  >
+    <h2 id="formBotText" class="t2 accent_text">
+      {{ noWidow(content.subhead) }}
+    </h2>
+  </form-controller>
 </template>
 
 <script>
-import NumberComponent from './Number_Component.vue'
 export default {
-  components: {
-    NumberComponent,
-  },
   computed: {
     content() {
       return this.$store.state.content.form

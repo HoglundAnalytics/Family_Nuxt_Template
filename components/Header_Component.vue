@@ -3,12 +3,9 @@
     <header class="parent">
       <div class="outer_wrapper">
         <img class="logo" :src="displayPic(content.logo.src)" />
-        <span v-if="content.middleText && scrollLocation < 200" class="t5">{{
-          content.middleText
-        }}</span>
         <div class="call_now_holder">
-          <span class="call_now t4">Call Now <NumberComponent /> </span>
-          <DynamicButton v-if="content.buttonText" class="hide_large">{{
+          <span class="call_now t4"><NumberComponent /></span>
+          <DynamicButton v-if="content.buttonText" class="">{{
             content.buttonText
           }}</DynamicButton>
         </div>
