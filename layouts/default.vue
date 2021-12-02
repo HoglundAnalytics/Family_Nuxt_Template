@@ -4,7 +4,6 @@
     <Header :scroll-location="scroll_location" />
     <Hero />
     <HeroOverlap />
-    <ContentAside />
     <Floater :scroll-location="scroll_location"
       ><TT_OT>
         <div>
@@ -18,6 +17,7 @@
     </Floater>
     <Badges v-if="content.badges" :scroll-location="scroll_location" />
     <ContentAside />
+    <ContentAside :flip="true" />
     <Cta :scroll-location="scroll_location" :content="content.cta1"> </Cta>
     <FooterComponent>
       <Reviews />
