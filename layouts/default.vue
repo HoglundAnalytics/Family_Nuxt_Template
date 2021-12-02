@@ -18,7 +18,6 @@
     <Badges v-if="content.badges" :scroll-location="scroll_location" />
     <ContentAside />
     <ContentAside :flip="true" />
-    <Cta :scroll-location="scroll_location" :content="content.cta1"> </Cta>
     <FooterComponent>
       <Reviews />
       <Cta :scroll-location="scroll_location" :content="content.cta2"> </Cta>
